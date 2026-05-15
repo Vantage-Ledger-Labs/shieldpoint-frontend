@@ -8,6 +8,7 @@ export type StellarNetworkConfig = {
   passphrase: string;
   horizonUrl: string;
   badgeLabel: string;
+  explorerUrl: string;
 };
 
 const NETWORK_CONFIGS: Record<StellarNetwork, StellarNetworkConfig> = {
@@ -16,12 +17,14 @@ const NETWORK_CONFIGS: Record<StellarNetwork, StellarNetworkConfig> = {
     passphrase: "Futurenet ; February 2024",
     horizonUrl: "https://horizon-futurenet.stellar.org",
     badgeLabel: "Futurenet",
+    explorerUrl: "https://futurenet.stellarexplorer.com",
   },
   [StellarNetwork.TESTNET]: {
     name: "Testnet",
     passphrase: "Test SDF Network ; September 2015",
     horizonUrl: "https://horizon-testnet.stellar.org",
     badgeLabel: "Testnet",
+    explorerUrl: "https://testnet.stellarexplorer.com",
   },
 };
 
